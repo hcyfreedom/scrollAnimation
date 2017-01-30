@@ -1,0 +1,92 @@
+.section, .section .section-content p, .section .section-content img {
+    -webkit-transition: all 2s ease-out;
+    -moz-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+
+body {
+    background-color: #48cfad;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.page-wrapper {
+    width: 80%;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+@media (max-width: 767px) {
+    .page-wrapper {
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 15px;
+    }
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0;
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transform: translateY(50px);
+}
+.section h2 {
+    font-size: 30px;
+    text-align: center;
+}
+.section .section-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .section .section-content {
+        width: 100%;
+    }
+}
+.section .section-content p {
+    max-width: 80%;
+    margin: 20px auto 50px;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+}
+.section .section-content img {
+    width: 100%;
+    border-radius: 4px;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+}
+.section.animation {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.section.animation .section-content p,
+.section.animation .section-content img {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
